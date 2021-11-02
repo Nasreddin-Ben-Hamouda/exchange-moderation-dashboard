@@ -34,7 +34,7 @@
           <a data-toggle="tooltip" title="Cliquer pour voir plus" href="#">
           <div class="card card-stats">
             <div class="card-header card-header-danger card-header-icon">
-     
+
               <div class="card-icon">
                 <i class="material-icons">info_outline</i>
               </div>
@@ -58,7 +58,7 @@
           <a data-toggle="tooltip" title="Cliquer pour voir plus" href="#">
           <div class="card card-stats">
             <div class="card-header card-header-danger card-header-icon">
-     
+
               <div class="card-icon">
                 <i class="material-icons">forum</i>
               </div>
@@ -75,8 +75,8 @@
             </div>
           </div>
           </a>
-        </div>        
-       
+        </div>
+
         <div class="col-lg-4 col-md-6 col-sm-6">
             <a data-toggle="tooltip" title="Cliquer pour voir plus" href="#">
 
@@ -90,7 +90,7 @@
                 <p class="card-category">Total de topics crées</p>
                 <h3 class="card-title">{{ $stats['NBR_CREATED_TOPICS'] }}</h3>
               </div>
- 
+
               <div class="card-footer">
                 <div>
                   <p class="text-success">
@@ -130,7 +130,7 @@
 
       {{-- deuxieme ligne de statistiques tjrs dans les statistiques récentes --}}
       <div class="row">
-        
+
       </div>
       <br/><br/>
 
@@ -150,7 +150,7 @@
       <div class="row">
         <p id="group1-stats-error-msg" class="text-danger" style="display:none;">Error message must be shown right there</p>
       </div>
-    
+
      {{-- END ERROR MSG DIV --}}
       <div class="row blur-container" id="group-1-stats-container">
         <div class="col-md-6">
@@ -175,7 +175,7 @@
         <div class="col-md-6">
           <div class="card card-chart">
             <div class="card-header card-header-info">
-              <div class="ct-chart" id="signaledPosts"></div>    
+              <div class="ct-chart" id="signaledPosts"></div>
 
             </div>
             <div class="card-body">
@@ -189,12 +189,12 @@
               </div>
             </div>
           </div>
-        </div> 
+        </div>
 
         <div class="col-md-6">
           <div class="card card-chart">
             <div class="card-header card-header-info">
-              <div class="ct-chart" id="signaledComments"></div>    
+              <div class="ct-chart" id="signaledComments"></div>
 
             </div>
             <div class="card-body">
@@ -208,7 +208,7 @@
               </div>
             </div>
           </div>
-        </div> 
+        </div>
 
 
         <div class="col-md-6">
@@ -235,7 +235,7 @@
               <li id="g1-paginator-previous-link" class="page-item">
                  <span class="page-link">« 7 jours antérieurs</span>
               </li>
-                    
+
               <li  id="g1-paginator-next-link" class="page-item disabled"  aria-disabled="true">
                 <span class="page-link"> 7 jours suivants »</span>
               </li>
@@ -245,7 +245,7 @@
               </li>
             </ul>
           </nav>
-        </div>        
+        </div>
         {{-- END PAGINATOR ELEMENT --}}
       </div>
       {{-- deuxieme ligne des chartes --}}
@@ -266,7 +266,7 @@
       <div class="row">
         <h3>Statistiques sur la totalité des 7 jours</h3>
       </div>
-     {{-- END ERROR MSG DIV --}}  
+     {{-- END ERROR MSG DIV --}}
 
       <div id="group-2-stats-container" class="row blur-container">
         <div class="col-md-6">
@@ -275,7 +275,7 @@
               <h4 class="card-title">Intéractions sur le blog</h4>
             </div>
             <div class="card-body">
-              <div class="ct-chart ct-square" id="postsInteraction"></div> 
+              <div class="ct-chart ct-square" id="postsInteraction"></div>
             </div>
             <div class="card-footer">
               <p id="interactions-total">Total d'intéractions = N</p>
@@ -284,7 +284,7 @@
               </p>
             </div>
           </div>
-        </div> 
+        </div>
 
         <div class="col-md-6">
           <div class="card card-chart">
@@ -293,7 +293,7 @@
               {{-- <div class="ct-chart" id="websiteViewsChart"></div> --}}
             </div>
             <div class="card-body">
-              <div class="ct-chart ct-square" id="exchangeContributors"></div> 
+              <div class="ct-chart ct-square" id="exchangeContributors"></div>
             </div>
             <div class="card-footer">
               <p id="contributors-total">Total de contributeurs = N</p>
@@ -302,7 +302,7 @@
               </p>
             </div>
           </div>
-        </div> 
+        </div>
 
         {{-- BEGIN PAGINATOR ELEMENT --}}
         <div class="d-flex justify-content-center">
@@ -311,7 +311,7 @@
               <li id="g2-paginator-previous-link" class="page-item">
                  <span class="page-link">« 7 jours antérieurs</span>
               </li>
-                    
+
               <li  id="g2-paginator-next-link" class="page-item disabled"  aria-disabled="true">
                 <span class="page-link"> 7 jours suivants »</span>
               </li>
@@ -321,9 +321,9 @@
               </li>
             </ul>
           </nav>
-        </div>     
-      </div>   
-        {{-- END PAGINATOR ELEMENT --}}        
+        </div>
+      </div>
+        {{-- END PAGINATOR ELEMENT --}}
 
 
 
@@ -339,17 +339,17 @@
               <span class="sr-only">Loading...</span>
           </button>
         </div>
-  
+
         {{-- BEGIN ERROR MSG DIV --}}
         <div class="row">
           <p id="group2-perDay-stats-error-msg" class="text-danger" style="display:none;">Error message must be shown right there</p>
         </div>
-  
+
         <div class="row">
           <h3>Statistiques par jour</h3>
         </div>
-       {{-- END ERROR MSG DIV --}}  
-  
+       {{-- END ERROR MSG DIV --}}
+
         <div id="group-2-perDay-stats-container" class="row blur-container">
           <div class="col-md-6">
             <div class="card card-chart">
@@ -357,7 +357,7 @@
                 <h4 class="card-title">Intéractions sur le blog par jour</h4>
               </div>
               <div class="card-body">
-                <div class="ct-chart ct-square" id="perDayPostsInteraction"></div> 
+                <div class="ct-chart ct-square" id="perDayPostsInteraction"></div>
               </div>
               <div class="card-footer">
                 <p id="perDay-interactions-total">Total d'intéractions dans ce jour = N</p>
@@ -366,8 +366,8 @@
                 </p>
               </div>
             </div>
-          </div> 
-  
+          </div>
+
           <div class="col-md-6">
             <div class="card card-chart">
               <div class="card-header card-header-info">
@@ -375,7 +375,7 @@
                 {{-- <div class="ct-chart" id="websiteViewsChart"></div> --}}
               </div>
               <div class="card-body">
-                <div class="ct-chart ct-square" id="perDayExchangeContributors"></div> 
+                <div class="ct-chart ct-square" id="perDayExchangeContributors"></div>
               </div>
               <div class="card-footer">
                 {{-- <div class="stats"> --}}
@@ -385,8 +385,8 @@
                 </p>
               </div>
             </div>
-          </div> 
-  
+          </div>
+
           {{-- BEGIN PAGINATOR ELEMENT --}}
           <div class="d-flex justify-content-center">
             <nav>
@@ -395,11 +395,11 @@
                 <li id="perDay-g2-paginator-previous-link" class="page-item">
                    <span class="page-link">« jour précedent</span>
                 </li>
-                      
+
                 <li  id="perDay-g2-paginator-next-link" class="page-item disabled"  aria-disabled="true">
                   <span class="page-link"> jour suivant »</span>
                 </li>
-  
+
                 <li>
                   <i id="perDay-paginator-spinner-stats-group-2" class="fa fa-circle-o-notch fa-spin fa-3x fa-fw" style="display:none;"></i>
                 </li>
@@ -411,15 +411,15 @@
                 <li id="perWeek-g2-paginator-previous-link" class="page-item">
                    <span class="page-link">« 7 jours antérieures</span>
                 </li>
-                      
+
                 <li  id="perWeek-g2-paginator-next-link" class="page-item disabled"  aria-disabled="true">
                   <span class="page-link"> 7 jours suivants »</span>
                 </li>
               </ul>
               {{-- END PAGINATING BY WEEK  --}}
             </nav>
-          </div>        
-          {{-- END PAGINATOR ELEMENT --}}   
+          </div>
+          {{-- END PAGINATOR ELEMENT --}}
 
 {{-- ****************************************** END WORK PER DAY PIE CHARTS ****************************************** --}}
 
@@ -437,15 +437,15 @@
             {{-- <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i> --}}
             <i id="spinner-signals" class="fa fa-circle-o-notch fa-spin fa-3x fa-fw" style="display:none;"></i>
             <span class="sr-only">Loading...</span>
-        </button> 
+        </button>
       </div>
       {{-- BEGIN ERROR MSG DIV --}}
       <div class="row">
         <p id="group3-stats-error-msg" class="text-danger" style="display:none;">Error message must be shown right there</p>
       </div>
-     {{-- END ERROR MSG DIV --}}        
+     {{-- END ERROR MSG DIV --}}
       <div class="row blur-container" id="last-signaled-posts-and-profiles-container">
-     
+
         <div class="col-lg-12 col-md-12">
           <div class="card">
             <div class="card-header card-header-danger">
@@ -526,7 +526,7 @@
             </a>
           </div>
         </div>
-     
+
 
       {{-- LAST SIGNALED COMMENTS --}}
 
@@ -579,6 +579,6 @@
 @endsection
 
 @push('js')
-  <script src="{{ asset('material') }}/js/plugins/chartist-plugin-tooltip.min.js"></script>
+  <script src="{{ asset('material/js/plugins/chartist-plugin-tooltip.min.js') }}"></script>
   <script type="text/javascript" src="{{ asset("js/statistics/last_7_days_stats_group_1.js") }}"></script>
 @endpush
